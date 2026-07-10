@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brody | Milestone #1</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #f4f5f7;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { text-align: center; margin-bottom: 8px; }
+  h1 { font-size: 2.6rem; margin: 0; letter-spacing: -1px; }
+  .tag { color: #6b7280; font-size: 1rem; margin-top: 4px; }
+  .intro { font-size: 1.1rem; margin: 28px 0 40px; }
+  figure { margin: 0 0 40px; }
+  .frame {
+    background: #fff;
+    border: 1px solid #e2e4e8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .frame img { display: block; width: 100%; height: auto; }
+  .ph {
+    display: flex; align-items: center; justify-content: center;
+    aspect-ratio: 16 / 10; background: #eceef1; color: #9aa0a6;
+  }
+  figcaption { margin-top: 10px; }
+  figcaption b { font-size: 1.05rem; }
+  figcaption span { color: #4b5563; }
+  .parts { background: #fff; border: 1px solid #e2e4e8; border-radius: 12px; padding: 4px 22px; }
+  .milestone {
+    background: #0f766e; color: #fff; border-radius: 12px;
+    padding: 20px 24px; margin-top: 40px;
+  }
+  .milestone h2 { margin: 0 0 6px; }
+  footer { text-align: center; color: #9aa0a6; margin-top: 40px; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e7eb; background: #16181d; }
+    .tag, footer { color: #9aa0a6; }
+    .frame, .parts { background: #21242b; border-color: #2f333c; }
+    .ph { background: #2a2e36; color: #6b7280; }
+    figcaption span { color: #b6bcc6; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Brody</h1>
+    <div class="tag">a robot I'm building &middot; milestone #1</div>
+  </header>
+
+  <p class="intro">
+    Hey, this is Brody. He started as a doodle in my notebook, and now I'm
+    building him for real in Autodesk Inventor. This is my first milestone:
+    the wheels and the brackets that hold them are done. Here's where he's at.
+  </p>
+
+  <!-- 1. The sketch -->
+  <figure>
+    <div class="frame">
+      <img src="images/sketch.jpg" alt="Original pencil sketch of Brody the robot"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ph" style="display:none">
+        <svg width="120" height="150" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="3">
+          <rect x="42" y="6" width="36" height="30" rx="5"/><circle cx="53" cy="21" r="4"/><circle cx="67" cy="21" r="4"/>
+          <rect x="30" y="40" width="60" height="45" rx="4"/>
+          <rect x="10" y="45" width="16" height="40" rx="4"/><rect x="94" y="45" width="16" height="40" rx="4"/>
+          <circle cx="42" cy="120" r="18"/><circle cx="78" cy="120" r="18"/>
+        </svg>
+      </div>
+    </div>
+    <figcaption><b>Where it started</b><br>
+      <span>The original concept. Box head, blocky armored body, and two big wheels for feet.</span>
+    </figcaption>
+  </figure>
+
+  <!-- 2. Wheel front -->
+  <figure>
+    <div class="frame">
+      <img src="images/wheel-front.png" alt="Front view of the wheel in Inventor with dimensions"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ph" style="display:none">
+        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3">
+          <circle cx="75" cy="75" r="62"/><circle cx="75" cy="75" r="46"/>
+        </svg>
+      </div>
+    </div>
+    <figcaption><b>The wheel</b><br>
+      <span>About 5.3&Prime; across and a quarter-inch thick. This is what Brody rolls on.</span>
+    </figcaption>
+  </figure>
+
+  <!-- 3. Inside the wheel -->
+  <figure>
+    <div class="frame">
+      <img src="images/wheel-inside.png" alt="Internal frame and motor mount inside the wheel"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ph" style="display:none">
+        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="75" cy="75" r="62"/>
+          <path d="M45 55 h60 v40 h-60 z M45 55 l60 40 M105 55 l-60 40 M75 55 v40"/>
+        </svg>
+      </div>
+    </div>
+    <figcaption><b>Inside the wheel</b><br>
+      <span>The frame and motor mount that everything bolts onto.</span>
+    </figcaption>
+  </figure>
+
+  <!-- 4. Hub / drive dropped in -->
+  <figure>
+    <div class="frame">
+      <img src="images/wheel-hub.png" alt="Drive assembly seated in the wheel"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ph" style="display:none">
+        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="75" cy="75" r="62"/><circle cx="75" cy="75" r="50"/>
+          <rect x="55" y="55" width="40" height="40" rx="3"/><circle cx="75" cy="75" r="10"/>
+        </svg>
+      </div>
+    </div>
+    <figcaption><b>Coming together</b><br>
+      <span>The drive assembly dropped into the wheel, starting to look like a real hub.</span>
+    </figcaption>
+  </figure>
+
+  <!-- 5. Side profile + bracket -->
+  <figure>
+    <div class="frame">
+      <img src="images/wheel-side.png" alt="Side view of the wheel next to the leg bracket"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ph" style="display:none">
+        <svg width="180" height="150" viewBox="0 0 180 150" fill="none" stroke="currentColor" stroke-width="3">
+          <rect x="95" y="20" width="70" height="110" rx="34"/>
+          <rect x="30" y="60" width="45" height="30" rx="3"/><path d="M75 75 h20"/>
+        </svg>
+      </div>
+    </div>
+    <figcaption><b>Side profile</b><br>
+      <span>The wheel next to the leg-to-wheel bracket that holds it on.</span>
+    </figcaption>
+  </figure>
+
+  <h3>Parts modeled so far</h3>
+  <div class="parts">
+    <ul>
+      <li>Wheel <em>(+ v2 &amp; mirror)</em></li>
+      <li>Wheel Bracket <em>(+ mirrors)</em></li>
+      <li>Wheel Bracket Connector &amp; Screw</li>
+      <li>Leg-to-Wheel Connector <em>(+ mirror)</em></li>
+      <li>Fastener for Leg Frame</li>
+      <li>Brody, the main assembly</li>
+    </ul>
+  </div>
+
+  <div class="milestone">
+    <h2>Milestone 1 &nbsp;&#10003;</h2>
+    Wheels and brackets modeled and assembled. Next up: the legs, then the body
+    and that box head from the sketch.
+  </div>
+
+  <footer>Brody &middot; devlog #1 &middot; July 2026 &middot; by me</footer>
+
+</div>
+</body>
+</html>

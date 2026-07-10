@@ -1,0 +1,9 @@
+# Inventor files are binary — don't try to diff or change line endings
+*.iam binary
+*.ipt binary
+*.idw binary
+*.dwg binary
+
+# Web files: normalize to LF
+*.html text eol=lf
+*.md   text eol=lf

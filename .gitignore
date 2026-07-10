@@ -1,0 +1,13 @@
+# Autodesk Inventor temp / lock files
+*.lock
+~$*
+*.bak
+OldVersions/*.bak
+
+# Local tooling config
+.claude/
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
