@@ -39,7 +39,7 @@ GND and signal wires cross between them.
 | 36V e-bike battery | 10.4Ah, 374Wh, 5.8 lb. Slides on a **key-lock rail — reuse that as the battery lock.** The slide-in dock is not coming, so tap the pack's + / - blades directly (meter first, fuse the + lead, dad present). |
 | 2× LED light bars | Hoverboard turn signals → accent lights. 2-wire, single color (test at **12V**). |
 | Monitor speaker | 4Ω 2W (salvaged stereo pair — only need **one** for a mono voice). |
-| CMSIS-DAP debug probe | $8. Flashes the motor boards over SWD (3 wires). |
+| CMSIS-DAP debug probe | $8. Flashes the motor boards over SWD (3 wires). IN HAND now (a Raspberry Pi Debug Probe, which is CMSIS-DAP and works great with pyOCD). |
 | Arduino kit | Real-time motor/servo/light control; talks to the Pi over USB. |
 | Soldering iron, calipers, 3D printer | Already owned. |
 | PETG (4kg) | Skeleton + shell panels. |
@@ -65,11 +65,12 @@ GND and signal wires cross between them.
 
 | Item | ~Cost | Notes |
 |---|---|---|
-| Raspberry Pi 4 (4GB) or Pi 5 | $55–80 | Onboard brain for voice + roaming. **Pi Zero 2 W (~$15)** is enough if the AI lives on a server and the Pi just relays commands + streams the camera. |
+| Raspberry Pi 4 (4GB) or Pi 5 | $55–80 | Onboard brain for voice + roaming. HAVE ONE now (dad gave me a Pi); confirm the model so we can size its draw off the 5V buck. **Pi Zero 2 W (~$15)** is enough if the AI lives on a server and the Pi just relays commands + streams the camera. |
 | microSD card, 32GB+ | $8 | The Pi's OS. |
 | USB-C Pi power supply | $10 ⚪ | Handy for bench setup (on the robot it runs off the 5V buck). |
 | USB cable (Arduino ↔ Pi) | — | Powers the Arduino **and** carries the commands. Likely already in your Arduino kit. |
 | 1k resistor (UART level shift) | ~$0 | Single series resistor on the Arduino TX to board RX line (board TX to Arduino RX goes direct). Probably already in the kit. |
+| IMU (MPU-6050) | $3-6 | BRODY's tilt sensor. The Arduino reads it 100+ times a second and runs the self-balance loop. REQUIRED now that he balances on two wheels, no caster. |
 
 ## 🛒 Still need — Voice
 
@@ -102,7 +103,7 @@ interface with a Pi.*
 
 | Item | ~Cost | Notes |
 |---|---|---|
-| Caster wheel | $5–10 | The 3rd contact point (self-balancing is a someday problem). |
+| Caster wheel | $5–10 | NOT NEEDED. BRODY self-balances on two wheels (no caster), so there is no third contact point. |
 | Servo — head tilt (SG90 or MG996R) | dropped | Not doing servos. Head is fixed/posable, arms are posable and friction-held (nyloc + nylon washers, bigger bolts at the shoulders). |
 | Ultrasonic sensors (HC-SR04) | $2 ea | Obstacle detection for roaming. Grab 2–3. |
 | PCA9685 16-ch servo driver | not needed | No servos in the build. |
